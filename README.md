@@ -35,6 +35,7 @@
 http://aws001.s3.amazonaws.com/trailhead/TrailHead_ArchitectingInTheCloud.pdf
 
 - Design for failure and nothing else fails
+  - Avoid SPOF
   - Deploy to multiple regions and AZs as needed
   - use of ELB to distribute loads
   - use of auto-scaling
@@ -55,3 +56,15 @@ http://aws001.s3.amazonaws.com/trailhead/TrailHead_ArchitectingInTheCloud.pdf
   - Amazon EC2 local disc drive : transient data
   - Amazon EBS: persistent storage for any RDBMS + Snapshots on S3
   - Amazon RDS: RDBMS service - Automated and Managed MySQL
+
+
+### IAM Concepts
+
+- Principal 
+   - A person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS
+- Identities
+   - The IAM resource objects that are used to identify and group. You can attach a policy to an IAM identity. These include users, groups, and roles.
+- Entities
+   - The IAM resource objects that AWS uses for authentication. These include IAM users, federated users, and assumed IAM roles.
+- Resource
+   - The user, group, role, policy, and identity provider objects that are stored in IAM. As with other AWS services, you can add, edit, and remove resources from IAM.
